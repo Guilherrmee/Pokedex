@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" type="module" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> <!-- Fonte do Google -->
+    
+    <!-- Adicionando o Favicon -->
+    <link rel="icon" href="img/Icone Pikachu.png" type="image/png"> <!-- Altere o caminho se necessário -->
+</head>
+<body>
+    <header>
+        <nav id="menu_principal">
+            <div id="menu" class="center">
+                <div class="item_menu">
+                    <a href="#">Home</a>
+                </div>
+                <div class="item_menu">
+                    <a href="#pokedex">Pokédex</a>
+                </div>
+            </div>
+        </nav>
+        <div id="cabecalho" class="back_image">
+            <div id="caixa_cabecalho" class="center">
+                <h1 class="titulo_principal">Pokédex</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="pokedex">
+            <div id="caixa_pokedex" class="center">
+                <div class="titulo">
+                    <span>POKÉDEX</span>
+                </div>
+                <div class="conteudo">
+                    <div class="filtro">
+                        <input type="text" id="pokemonInput" placeholder="Digite o nome do Pokémon">
+                        <button id="searchButton">Buscar</button>
+                    </div>
+                    <div class="grid_pokemons" id="pokemonCards"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="rodape">
+            <div id="caixa_rodape" class="center">
+                Pokédex © 2023
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
